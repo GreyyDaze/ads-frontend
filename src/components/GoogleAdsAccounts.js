@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const GoogleAdsAccounts = ({ userId, setDisconnetAccount, disconnetAccount }) => {
+const GoogleAdsAccounts = ({ userId, setDisconnetAccount, disconnetAccount, accessToken, refreshToken, decodedIdToken }) => {
   const [accounts, setAccounts] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
